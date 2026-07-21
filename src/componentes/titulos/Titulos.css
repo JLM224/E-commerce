@@ -1,0 +1,36 @@
+/* Importar fuente elegante */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500&display=swap');
+
+.T1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.2rem, 3vw, 4.5rem);
+    color: #1f1f1f;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.08);
+    position: relative;
+    display: inline-block;
+}
+
+.T1::after {
+    content: "";
+    width: 60%;
+    height: 3px;
+    background: linear-gradient(
+        to right,
+        #c9a227,
+        #f5d76e,
+        #c9a227
+    );
+    position: absolute;
+    left: 20%;
+    bottom: 0;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .T1 {
+        letter-spacing: 1px;
+        line-height: 1.2;
+    }
+}

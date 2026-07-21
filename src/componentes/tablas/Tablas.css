@@ -1,0 +1,24 @@
+.imagen-producto {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+
+.imagen-producto {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .imagen-producto-tabla {
+    width: 70px;
+    height: 70px;
+  }
+}
