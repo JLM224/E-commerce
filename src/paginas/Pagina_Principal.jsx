@@ -12,9 +12,9 @@ const Pagina_Principal = () => {
   const [productos, setProductos] = useState([])
   // const [contador, setContador] = useState(0)
 
-  const obtenerProductosApi = async () => {
+  const obtenerProductosHabilitados = async () => {
     try {
-      const res = await clienteAxios.get("/productos")
+      const res = await clienteAxios.get("/productos/habilitados")
       setProductos(res.data.productos)
     } catch (error) {
       console.log(error)
@@ -27,7 +27,7 @@ const Pagina_Principal = () => {
   // }
 
   useEffect(() => {
-    obtenerProductosApi()
+    obtenerProductosHabilitados()
   }, [])
   return (
     <Container fluid className="my-5">
